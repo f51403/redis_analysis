@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="deps">
+        <df name="hiredis">
+          <in>async.c</in>
+          <in>hiredis.c</in>
+          <in>net.c</in>
+          <in>read.c</in>
+          <in>sds.c</in>
+        </df>
+        <df name="linenoise">
+          <in>linenoise.c</in>
+        </df>
+      </df>
+      <df name="src">
+        <in>adlist.c</in>
+        <in>ae.c</in>
+        <in>anet.c</in>
+        <in>aof.c</in>
+        <in>bio.c</in>
+        <in>bitops.c</in>
+        <in>blocked.c</in>
+        <in>childinfo.c</in>
+        <in>cluster.c</in>
+        <in>config.c</in>
+        <in>crc16.c</in>
+        <in>crc64.c</in>
+        <in>db.c</in>
+        <in>debug.c</in>
+        <in>defrag.c</in>
+        <in>dict.c</in>
+        <in>endianconv.c</in>
+        <in>evict.c</in>
+        <in>expire.c</in>
+        <in>geo.c</in>
+        <in>geohash.c</in>
+        <in>geohash_helper.c</in>
+        <in>hyperloglog.c</in>
+        <in>intset.c</in>
+        <in>latency.c</in>
+        <in>lazyfree.c</in>
+        <in>lzf_c.c</in>
+        <in>lzf_d.c</in>
+        <in>memtest.c</in>
+        <in>module.c</in>
+        <in>multi.c</in>
+        <in>networking.c</in>
+        <in>notify.c</in>
+        <in>object.c</in>
+        <in>pqsort.c</in>
+        <in>pubsub.c</in>
+        <in>quicklist.c</in>
+        <in>rand.c</in>
+        <in>rax.c</in>
+        <in>rdb.c</in>
+        <in>redis-benchmark.c</in>
+        <in>redis-check-aof.c</in>
+        <in>redis-check-rdb.c</in>
+        <in>redis-cli.c</in>
+        <in>release.c</in>
+        <in>replication.c</in>
+        <in>rio.c</in>
+        <in>scripting.c</in>
+        <in>sds.c</in>
+        <in>sentinel.c</in>
+        <in>server.c</in>
+        <in>setproctitle.c</in>
+        <in>sha1.c</in>
+        <in>siphash.c</in>
+        <in>slowlog.c</in>
+        <in>sort.c</in>
+        <in>sparkline.c</in>
+        <in>syncio.c</in>
+        <in>t_hash.c</in>
+        <in>t_hash_1.c</in>
+        <in>t_list.c</in>
+        <in>t_set.c</in>
+        <in>t_string.c</in>
+        <in>t_zset.c</in>
+        <in>util.c</in>
+        <in>ziplist.c</in>
+        <in>zipmap.c</in>
+        <in>zmalloc.c</in>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="重要文件"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-std=c99"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="deps/hiredis/async.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="deps/hiredis/hiredis.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="deps/hiredis/net.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="deps/hiredis/read.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="deps/hiredis/sds.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="deps/linenoise/linenoise.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <folder path="0/deps/hiredis">
+        <cTool>
+          <incDir>
+            <pElem>deps/hiredis</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/deps/linenoise">
+        <cTool>
+          <incDir>
+            <pElem>deps/linenoise</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <item path="src/adlist.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/ae.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/anet.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/aof.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/bio.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/bitops.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/blocked.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/childinfo.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/cluster.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/config.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/crc16.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/crc64.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/db.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/debug.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/defrag.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/dict.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/endianconv.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/evict.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/expire.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/geo.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/geohash.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/geohash_helper.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/hyperloglog.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/intset.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/latency.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/lazyfree.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/lzf_c.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/lzf_d.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/memtest.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/module.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/multi.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/networking.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/notify.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/object.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/pqsort.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/pubsub.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/quicklist.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/rand.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/rax.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/rdb.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/redis-benchmark.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>deps/hiredis</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/redis-check-aof.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/redis-check-rdb.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/redis-cli.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>deps/hiredis</pElem>
+            <pElem>/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include</pElem>
+            <pElem>deps/linenoise</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/release.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/replication.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/rio.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/scripting.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>deps/lua/src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/sds.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/sentinel.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>deps/hiredis</pElem>
+            <pElem>/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/server.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>deps/lua/src</pElem>
+            <pElem>/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/setproctitle.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include</pElem>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/sha1.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/siphash.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/slowlog.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/sort.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/sparkline.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/syncio.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/t_hash.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/t_hash_1.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/t_list.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/t_set.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/t_string.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/t_zset.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/util.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/ziplist.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/zipmap.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="src/zmalloc.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

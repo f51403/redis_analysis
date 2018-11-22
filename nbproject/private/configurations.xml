@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="deps">
+        <df name="hiredis">
+          <df name="adapters">
+            <in>ae.h</in>
+            <in>glib.h</in>
+            <in>ivykis.h</in>
+            <in>libev.h</in>
+            <in>libevent.h</in>
+            <in>libuv.h</in>
+            <in>macosx.h</in>
+            <in>qt.h</in>
+          </df>
+          <df name="examples">
+            <in>example-ae.c</in>
+            <in>example-glib.c</in>
+            <in>example-ivykis.c</in>
+            <in>example-libev.c</in>
+            <in>example-libevent.c</in>
+            <in>example-libuv.c</in>
+            <in>example-macosx.c</in>
+            <in>example-qt.cpp</in>
+            <in>example-qt.h</in>
+            <in>example.c</in>
+          </df>
+          <in>async.c</in>
+          <in>async.h</in>
+          <in>dict.c</in>
+          <in>dict.h</in>
+          <in>fmacros.h</in>
+          <in>hiredis.c</in>
+          <in>hiredis.h</in>
+          <in>net.c</in>
+          <in>net.h</in>
+          <in>read.c</in>
+          <in>read.h</in>
+          <in>sds.c</in>
+          <in>sds.h</in>
+          <in>sdsalloc.h</in>
+          <in>test.c</in>
+          <in>win32.h</in>
+        </df>
+        <df name="jemalloc">
+          <df name="bin">
+          </df>
+          <df name="doc">
+          </df>
+          <df name="include">
+            <df name="jemalloc">
+              <df name="internal">
+                <in>arena.h</in>
+                <in>atomic.h</in>
+                <in>base.h</in>
+                <in>bitmap.h</in>
+                <in>chunk.h</in>
+                <in>chunk_dss.h</in>
+                <in>chunk_mmap.h</in>
+                <in>ckh.h</in>
+                <in>ctl.h</in>
+                <in>extent.h</in>
+                <in>hash.h</in>
+                <in>huge.h</in>
+                <in>jemalloc_internal_decls.h</in>
+                <in>jemalloc_internal_macros.h</in>
+                <in>mb.h</in>
+                <in>mutex.h</in>
+                <in>pages.h</in>
+                <in>prng.h</in>
+                <in>prof.h</in>
+                <in>ql.h</in>
+                <in>qr.h</in>
+                <in>quarantine.h</in>
+                <in>rb.h</in>
+                <in>rtree.h</in>
+                <in>stats.h</in>
+                <in>tcache.h</in>
+                <in>tsd.h</in>
+                <in>util.h</in>
+                <in>valgrind.h</in>
+              </df>
+            </df>
+            <df name="msvc_compat">
+              <df name="C99">
+                <in>stdbool.h</in>
+                <in>stdint.h</in>
+              </df>
+              <in>strings.h</in>
+              <in>windows_extra.h</in>
+            </df>
+          </df>
+          <df name="src">
+            <in>arena.c</in>
+            <in>atomic.c</in>
+            <in>base.c</in>
+            <in>bitmap.c</in>
+            <in>chunk.c</in>
+            <in>chunk_dss.c</in>
+            <in>chunk_mmap.c</in>
+            <in>ckh.c</in>
+            <in>ctl.c</in>
+            <in>extent.c</in>
+            <in>hash.c</in>
+            <in>huge.c</in>
+            <in>jemalloc.c</in>
+            <in>mb.c</in>
+            <in>mutex.c</in>
+            <in>pages.c</in>
+            <in>prof.c</in>
+            <in>quarantine.c</in>
+            <in>rtree.c</in>
+            <in>stats.c</in>
+            <in>tcache.c</in>
+            <in>tsd.c</in>
+            <in>util.c</in>
+            <in>valgrind.c</in>
+            <in>zone.c</in>
+          </df>
+          <df name="test">
+            <df name="include">
+              <df name="test">
+                <in>SFMT-alti.h</in>
+                <in>SFMT-params.h</in>
+                <in>SFMT-params11213.h</in>
+                <in>SFMT-params1279.h</in>
+                <in>SFMT-params132049.h</in>
+                <in>SFMT-params19937.h</in>
+                <in>SFMT-params216091.h</in>
+                <in>SFMT-params2281.h</in>
+                <in>SFMT-params4253.h</in>
+                <in>SFMT-params44497.h</in>
+                <in>SFMT-params607.h</in>
+                <in>SFMT-params86243.h</in>
+                <in>SFMT-sse2.h</in>
+                <in>SFMT.h</in>
+                <in>btalloc.h</in>
+                <in>math.h</in>
+                <in>mq.h</in>
+                <in>mtx.h</in>
+                <in>test.h</in>
+                <in>thd.h</in>
+                <in>timer.h</in>
+              </df>
+            </df>
+            <df name="integration">
+              <in>MALLOCX_ARENA.c</in>
+              <in>aligned_alloc.c</in>
+              <in>allocated.c</in>
+              <in>chunk.c</in>
+              <in>mallocx.c</in>
+              <in>overflow.c</in>
+              <in>posix_memalign.c</in>
+              <in>rallocx.c</in>
+              <in>sdallocx.c</in>
+              <in>thread_arena.c</in>
+              <in>thread_tcache_enabled.c</in>
+              <in>xallocx.c</in>
+            </df>
+            <df name="src">
+              <in>SFMT.c</in>
+              <in>btalloc.c</in>
+              <in>btalloc_0.c</in>
+              <in>btalloc_1.c</in>
+              <in>math.c</in>
+              <in>mq.c</in>
+              <in>mtx.c</in>
+              <in>test.c</in>
+              <in>thd.c</in>
+              <in>timer.c</in>
+            </df>
+            <df name="stress">
+              <in>microbench.c</in>
+            </df>
+            <df name="unit">
+              <in>SFMT.c</in>
+              <in>atomic.c</in>
+              <in>bitmap.c</in>
+              <in>ckh.c</in>
+              <in>hash.c</in>
+              <in>junk.c</in>
+              <in>junk_alloc.c</in>
+              <in>junk_free.c</in>
+              <in>lg_chunk.c</in>
+              <in>mallctl.c</in>
+              <in>math.c</in>
+              <in>mq.c</in>
+              <in>mtx.c</in>
+              <in>prof_accum.c</in>
+              <in>prof_active.c</in>
+              <in>prof_gdump.c</in>
+              <in>prof_idump.c</in>
+              <in>prof_reset.c</in>
+              <in>prof_thread_name.c</in>
+              <in>ql.c</in>
+              <in>qr.c</in>
+              <in>quarantine.c</in>
+              <in>rb.c</in>
+              <in>rtree.c</in>
+              <in>size_classes.c</in>
+              <in>stats.c</in>
+              <in>tsd.c</in>
+              <in>util.c</in>
+              <in>zero.c</in>
+            </df>
+          </df>
+        </df>
+        <df name="linenoise">
+          <in>example.c</in>
+          <in>linenoise.c</in>
+          <in>linenoise.h</in>
+        </df>
+        <df name="lua">
+          <df name="doc">
+          </df>
+          <df name="etc">
+            <in>all.c</in>
+            <in>lua.hpp</in>
+            <in>min.c</in>
+            <in>noparser.c</in>
+          </df>
+          <df name="src">
+            <in>fpconv.c</in>
+            <in>fpconv.h</in>
+            <in>lapi.c</in>
+            <in>lapi.h</in>
+            <in>lauxlib.c</in>
+            <in>lauxlib.h</in>
+            <in>lbaselib.c</in>
+            <in>lcode.c</in>
+            <in>lcode.h</in>
+            <in>ldblib.c</in>
+            <in>ldebug.c</in>
+            <in>ldebug.h</in>
+            <in>ldo.c</in>
+            <in>ldo.h</in>
+            <in>ldump.c</in>
+            <in>lfunc.c</in>
+            <in>lfunc.h</in>
+            <in>lgc.c</in>
+            <in>lgc.h</in>
+            <in>linit.c</in>
+            <in>liolib.c</in>
+            <in>llex.c</in>
+            <in>llex.h</in>
+            <in>llimits.h</in>
+            <in>lmathlib.c</in>
+            <in>lmem.c</in>
+            <in>lmem.h</in>
+            <in>loadlib.c</in>
+            <in>lobject.c</in>
+            <in>lobject.h</in>
+            <in>lopcodes.c</in>
+            <in>lopcodes.h</in>
+            <in>loslib.c</in>
+            <in>lparser.c</in>
+            <in>lparser.h</in>
+            <in>lstate.c</in>
+            <in>lstate.h</in>
+            <in>lstring.c</in>
+            <in>lstring.h</in>
+            <in>lstrlib.c</in>
+            <in>ltable.c</in>
+            <in>ltable.h</in>
+            <in>ltablib.c</in>
+            <in>ltm.c</in>
+            <in>ltm.h</in>
+            <in>lua.c</in>
+            <in>lua.h</in>
+            <in>lua_bit.c</in>
+            <in>lua_cjson.c</in>
+            <in>lua_cmsgpack.c</in>
+            <in>lua_struct.c</in>
+            <in>luac.c</in>
+            <in>luaconf.h</in>
+            <in>lualib.h</in>
+            <in>lundump.c</in>
+            <in>lundump.h</in>
+            <in>lvm.c</in>
+            <in>lvm.h</in>
+            <in>lzio.c</in>
+            <in>lzio.h</in>
+            <in>print.c</in>
+            <in>strbuf.c</in>
+            <in>strbuf.h</in>
+          </df>
+          <df name="test">
+          </df>
+        </df>
+      </df>
+      <df name="src">
+        <df name="modules">
+          <in>helloblock.c</in>
+          <in>hellotype.c</in>
+          <in>helloworld.c</in>
+          <in>testmodule.c</in>
+        </df>
+        <in>adlist.c</in>
+        <in>adlist.h</in>
+        <in>ae.c</in>
+        <in>ae.h</in>
+        <in>ae_epoll.c</in>
+        <in>ae_evport.c</in>
+        <in>ae_kqueue.c</in>
+        <in>ae_select.c</in>
+        <in>anet.c</in>
+        <in>anet.h</in>
+        <in>aof.c</in>
+        <in>asciilogo.h</in>
+        <in>atomicvar.h</in>
+        <in>bio.c</in>
+        <in>bio.h</in>
+        <in>bitops.c</in>
+        <in>blocked.c</in>
+        <in>childinfo.c</in>
+        <in>cluster.c</in>
+        <in>cluster.h</in>
+        <in>config.c</in>
+        <in>config.h</in>
+        <in>crc16.c</in>
+        <in>crc64.c</in>
+        <in>crc64.h</in>
+        <in>db.c</in>
+        <in>debug.c</in>
+        <in>debugmacro.h</in>
+        <in>defrag.c</in>
+        <in>dict.c</in>
+        <in>dict.h</in>
+        <in>endianconv.c</in>
+        <in>endianconv.h</in>
+        <in>evict.c</in>
+        <in>expire.c</in>
+        <in>fmacros.h</in>
+        <in>geo.c</in>
+        <in>geo.h</in>
+        <in>geohash.c</in>
+        <in>geohash.h</in>
+        <in>geohash_helper.c</in>
+        <in>geohash_helper.h</in>
+        <in>help.h</in>
+        <in>hyperloglog.c</in>
+        <in>intset.c</in>
+        <in>intset.h</in>
+        <in>latency.c</in>
+        <in>latency.h</in>
+        <in>lazyfree.c</in>
+        <in>lzf.h</in>
+        <in>lzfP.h</in>
+        <in>lzf_c.c</in>
+        <in>lzf_d.c</in>
+        <in>memtest.c</in>
+        <in>module.c</in>
+        <in>multi.c</in>
+        <in>networking.c</in>
+        <in>notify.c</in>
+        <in>object.c</in>
+        <in>pqsort.c</in>
+        <in>pqsort.h</in>
+        <in>pubsub.c</in>
+        <in>quicklist.c</in>
+        <in>quicklist.h</in>
+        <in>rand.c</in>
+        <in>rand.h</in>
+        <in>rax.c</in>
+        <in>rax.h</in>
+        <in>rax_malloc.h</in>
+        <in>rdb.c</in>
+        <in>rdb.h</in>
+        <in>redis-benchmark.c</in>
+        <in>redis-check-aof.c</in>
+        <in>redis-check-rdb.c</in>
+        <in>redis-cli.c</in>
+        <in>redisassert.h</in>
+        <in>redismodule.h</in>
+        <in>release.c</in>
+        <in>release.h</in>
+        <in>replication.c</in>
+        <in>rio.c</in>
+        <in>rio.h</in>
+        <in>scripting.c</in>
+        <in>sds.c</in>
+        <in>sds.h</in>
+        <in>sdsalloc.h</in>
+        <in>sentinel.c</in>
+        <in>server.c</in>
+        <in>server.h</in>
+        <in>setproctitle.c</in>
+        <in>sha1.c</in>
+        <in>sha1.h</in>
+        <in>siphash.c</in>
+        <in>slowlog.c</in>
+        <in>slowlog.h</in>
+        <in>solarisfixes.h</in>
+        <in>sort.c</in>
+        <in>sparkline.c</in>
+        <in>sparkline.h</in>
+        <in>syncio.c</in>
+        <in>t_hash.c</in>
+        <in>t_hash_1.c</in>
+        <in>t_list.c</in>
+        <in>t_set.c</in>
+        <in>t_string.c</in>
+        <in>t_zset.c</in>
+        <in>testhelp.h</in>
+        <in>util.c</in>
+        <in>util.h</in>
+        <in>version.h</in>
+        <in>ziplist.c</in>
+        <in>ziplist.h</in>
+        <in>zipmap.c</in>
+        <in>zipmap.h</in>
+        <in>zmalloc.c</in>
+        <in>zmalloc.h</in>
+      </df>
+      <df name="tests">
+        <df name="assets">
+        </df>
+        <df name="cluster">
+          <df name="tests">
+            <df name="helpers">
+            </df>
+            <df name="includes">
+            </df>
+          </df>
+          <df name="tmp">
+          </df>
+        </df>
+        <df name="helpers">
+        </df>
+        <df name="integration">
+        </df>
+        <df name="sentinel">
+          <df name="tests">
+            <df name="includes">
+            </df>
+          </df>
+          <df name="tmp">
+          </df>
+        </df>
+        <df name="support">
+        </df>
+        <df name="tmp">
+        </df>
+        <df name="unit">
+          <df name="type">
+          </df>
+        </df>
+      </df>
+      <df name="utils">
+        <df name="create-cluster">
+        </df>
+        <df name="graphs">
+          <df name="commits-over-time">
+          </df>
+        </df>
+        <df name="hashtable">
+          <in>rehashing.c</in>
+        </df>
+        <df name="hyperloglog">
+        </df>
+        <df name="lru">
+          <in>lfu-simulation.c</in>
+        </df>
+        <df name="releasetools">
+        </df>
+        <in>corrupt_rdb.c</in>
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>4</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

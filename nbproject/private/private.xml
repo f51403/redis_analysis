@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <code-assistance-data xmlns="http://www.netbeans.org/ns/make-project-private/1">
+        <code-model-enabled>true</code-model-enabled>
+    </code-assistance-data>
+    <data xmlns="http://www.netbeans.org/ns/make-project-private/1">
+        <activeConfTypeElem>0</activeConfTypeElem>
+        <activeConfIndexElem>0</activeConfIndexElem>
+    </data>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Users/zhengsuiyu/Downloads/redis-4.0.9/src/db.c</file>
+            <file>file:/Users/zhengsuiyu/Downloads/redis-4.0.9/src/networking.c</file>
+            <file>file:/Users/zhengsuiyu/Downloads/redis-4.0.9/src/server.c</file>
+            <file>file:/Users/zhengsuiyu/Downloads/redis-4.0.9/src/quicklist.c</file>
+            <file>file:/Users/zhengsuiyu/Downloads/redis-4.0.9/src/blocked.c</file>
+            <file>file:/Users/zhengsuiyu/Downloads/redis-4.0.9/src/t_list.c</file>
+            <file>file:/Users/zhengsuiyu/Downloads/redis-4.0.9/src/dict.c</file>
+            <file>file:/Users/zhengsuiyu/Downloads/redis-4.0.9/src/dict.h</file>
+            <file>file:/Users/zhengsuiyu/Downloads/redis-4.0.9/src/adlist.c</file>
+            <file>file:/Users/zhengsuiyu/Downloads/redis-4.0.9/src/server.h</file>
+            <file>file:/Users/zhengsuiyu/Downloads/redis-4.0.9/src/quicklist.h</file>
+            <file>file:/Users/zhengsuiyu/Downloads/redis-4.0.9/src/ziplist.h</file>
+            <file>file:/Users/zhengsuiyu/Downloads/redis-4.0.9/src/ziplist.c</file>
+            <file>file:/Users/zhengsuiyu/Downloads/redis-4.0.9/src/object.c</file>
+        </group>
+    </open-files>
+</project-private>
