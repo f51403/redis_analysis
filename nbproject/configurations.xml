@@ -47,6 +47,7 @@
         <in>module.c</in>
         <in>multi.c</in>
         <in>networking.c</in>
+        <in>newfile.c</in>
         <in>notify.c</in>
         <in>object.c</in>
         <in>pqsort.c</in>
@@ -395,6 +396,8 @@
             <pElem>/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include</pElem>
           </incDir>
         </cTool>
+      </item>
+      <item path="src/newfile.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="src/notify.c" ex="false" tool="0" flavor2="3">
         <cTool flags="0">

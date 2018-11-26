@@ -256,16 +256,16 @@ int zslDelete(zskiplist *zsl, double score, sds ele, zskiplistNode **node) {
     }
     return 0; /* not found */
 }
-
+//比较最小值
 int zslValueGteMin(double value, zrangespec *spec) {
     return spec->minex ? (value > spec->min) : (value >= spec->min);
 }
-
+//比较最大值
 int zslValueLteMax(double value, zrangespec *spec) {
     return spec->maxex ? (value < spec->max) : (value <= spec->max);
 }
 
-/* Returns if there is a part of the zset is in range. */
+/* Returns if there is a part of the zset is in range. */ //是否在zsl范围内
 int zslIsInRange(zskiplist *zsl, zrangespec *range) {
     zskiplistNode *x;
 
@@ -273,10 +273,10 @@ int zslIsInRange(zskiplist *zsl, zrangespec *range) {
     if (range->min > range->max ||
             (range->min == range->max && (range->minex || range->maxex)))
         return 0;
-    x = zsl->tail;
+    x = zsl->tail; //比较tail是否小于最小值
     if (x == NULL || !zslValueGteMin(x->score,range))
         return 0;
-    x = zsl->header->level[0].forward;
+    x = zsl->header->level[0].forward; // 比较第一个元素是否大于最大值
     if (x == NULL || !zslValueLteMax(x->score,range))
         return 0;
     return 1;
@@ -336,13 +336,13 @@ zskiplistNode *zslLastInRange(zskiplist *zsl, zrangespec *range) {
 /* Delete all the elements with score between min and max from the skiplist.
  * Min and max are inclusive, so a score >= min || score <= max is deleted.
  * Note that this function takes the reference to the hash table view of the
- * sorted set, in order to remove the elements from the hash table too. */
+ * sorted set, in order to remove the elements from the hash table too. */ //根据score删除节点
 unsigned long zslDeleteRangeByScore(zskiplist *zsl, zrangespec *range, dict *dict) {
     zskiplistNode *update[ZSKIPLIST_MAXLEVEL], *x;
     unsigned long removed = 0;
     int i;
 
-    x = zsl->header;
+    x = zsl->header; //查找每层最小于或等于min的score节点，记录到update中
     for (i = zsl->level-1; i >= 0; i--) {
         while (x->level[i].forward && (range->minex ?
             x->level[i].forward->score <= range->min :
@@ -352,32 +352,32 @@ unsigned long zslDeleteRangeByScore(zskiplist *zsl, zrangespec *range, dict *dic
     }
 
     /* Current node is the last with score < or <= min. */
-    x = x->level[0].forward;
+    x = x->level[0].forward; //当前节点小于等于min， 获取下一节点大于min
 
     /* Delete nodes while in range. */
     while (x &&
            (range->maxex ? x->score < range->max : x->score <= range->max))
     {
-        zskiplistNode *next = x->level[0].forward;
-        zslDeleteNode(zsl,x,update);
-        dictDelete(dict,x->ele);
-        zslFreeNode(x); /* Here is where x->ele is actually released. */
+        zskiplistNode *next = x->level[0].forward; //获取下一节点地址
+        zslDeleteNode(zsl,x,update); //删除节点
+        dictDelete(dict,x->ele); //删除ele
+        zslFreeNode(x); /* Here is where x->ele is actually released. */ //释放节点内存
         removed++;
         x = next;
     }
     return removed;
 }
-
+//根据string类型ele删除
 unsigned long zslDeleteRangeByLex(zskiplist *zsl, zlexrangespec *range, dict *dict) {
     zskiplistNode *update[ZSKIPLIST_MAXLEVEL], *x;
     unsigned long removed = 0;
     int i;
 
 
-    x = zsl->header;
+    x = zsl->header;// 查找ele每层小于给定范围最小值的节点地址
     for (i = zsl->level-1; i >= 0; i--) {
         while (x->level[i].forward &&
-            !zslLexValueGteMin(x->level[i].forward->ele,range))
+            !zslLexValueGteMin(x->level[i].forward->ele,range)) //比较下一节点ele是否大于给定范围，相等 0， 大于1 小于 -1
                 x = x->level[i].forward;
         update[i] = x;
     }
@@ -385,7 +385,7 @@ unsigned long zslDeleteRangeByLex(zskiplist *zsl, zlexrangespec *range, dict *di
     /* Current node is the last with score < or <= min. */
     x = x->level[0].forward;
 
-    /* Delete nodes while in range. */
+    /* Delete nodes while in range. */ //删除小于max的节点
     while (x && zslLexValueLteMax(x->ele,range)) {
         zskiplistNode *next = x->level[0].forward;
         zslDeleteNode(zsl,x,update);
